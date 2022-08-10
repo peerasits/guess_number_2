@@ -23,18 +23,18 @@ class Game{
   int doGuess(var num){
 
     if (num > answer) {
-      print("║ ➜ $num is too high! ▲");
+      print("║ ➜ $num is TOO HIGH! ▲");
       printSeperate();
       guessTime++;
       return 0;
     } else if (num < answer) {
-      print("║ ➜ $num is too low! ▼");
+      print("║ ➜ $num is TOO LOW! ▼");
       printSeperate();
       guessTime++;
       return 0;
     } else {
       ++guessTime;
-      print("║ ➜ $num is correct ❤, Total guesses : $guessTime");
+      print("║ ➜ $num is CORRECT ❤, total guesses : $guessTime");
       printSeperate();
       return 1;
 

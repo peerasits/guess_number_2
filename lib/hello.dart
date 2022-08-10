@@ -5,7 +5,7 @@ void printSeperate(){
 }
 void printStat(List<int> list){
   for(var i = 0;i<list.length;i++){
-    print('Game #${i+1}: ${list[i]} guesses');
+    print('� Game #${i+1}: ${list[i]} guesses');
   }
 }
 
