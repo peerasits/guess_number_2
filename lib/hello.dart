@@ -70,7 +70,7 @@ void main() {
         break;
       }
     }while(true);
-    Game.list.add(g.getGuesstimes());
+    Game.list.add(g.getGuessTime);
   }while(playAgain);
 
   printStat(Game.list);
