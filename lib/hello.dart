@@ -11,7 +11,7 @@ void printStat(List<int> list){
 
 void main() {
   var playAgain = false;
-  List<int> list = [];
+
   var temp;
   var g ;
 
@@ -57,10 +57,11 @@ void main() {
     print("║                 THE END");
     print("╚════════════════════════════════════════════");
 
+    var play;
 
     do {
-      stdout.write("Play again (Y/N) : ");
-      var play = stdin.readLineSync();
+      stdout.write("Play again? (Y/N) : ");
+       play = stdin.readLineSync();
       if (play == 'Y' || play == 'y') {
         playAgain = true;
         break;
@@ -69,9 +70,9 @@ void main() {
         break;
       }
     }while(true);
-    list.add(g.getGuesstimes());
+    Game.list.add(g.getGuesstimes());
   }while(playAgain);
 
-  printStat(list);
+  printStat(Game.list);
 
 }

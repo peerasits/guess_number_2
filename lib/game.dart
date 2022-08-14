@@ -5,6 +5,7 @@ import 'package:guess_number_2/hello.dart';
 class Game{
   var answer;
   var guessTime;
+  static final List<int> list = [];
 
 
   Game({int maxRandom = 100}){
@@ -19,6 +20,11 @@ class Game{
   int getGuesstimes(){
     return guessTime;
   }
+
+  int get getGuessTime{
+    return guessTime;
+  }
+
 
   int doGuess(var num){
 
